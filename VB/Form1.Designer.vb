@@ -1,6 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
-Namespace RichEditNestedFields
+﻿Namespace RichEditNestedFields
 	Partial Public Class Form1
 		''' <summary>
 		''' Required designer variable.
@@ -52,7 +50,8 @@ Namespace RichEditNestedFields
 			Me.richEditControl1.Size = New System.Drawing.Size(1154, 485)
 			Me.richEditControl1.TabIndex = 0
 			Me.richEditControl1.Text = "richEditControl1"
-'			Me.richEditControl1.CalculateDocumentVariable += New DevExpress.XtraRichEdit.CalculateDocumentVariableEventHandler(Me.richEditControl1_CalculateDocumentVariable);
+'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
+'ORIGINAL LINE: this.richEditControl1.CalculateDocumentVariable += new DevExpress.XtraRichEdit.CalculateDocumentVariableEventHandler(this.richEditControl1_CalculateDocumentVariable);
 			' 
 			' barManager1
 			' 
@@ -106,7 +105,12 @@ Namespace RichEditNestedFields
 			Me.mailMergeBar1.DockCol = 0
 			Me.mailMergeBar1.DockRow = 0
 			Me.mailMergeBar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top
-			Me.mailMergeBar1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() { New DevExpress.XtraBars.LinkPersistInfo(Me.insertMergeFieldItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.showAllFieldCodesItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.showAllFieldResultsItem1), New DevExpress.XtraBars.LinkPersistInfo(Me.toggleViewMergedDataItem1)})
+			Me.mailMergeBar1.LinksPersistInfo.AddRange(New DevExpress.XtraBars.LinkPersistInfo() {
+				New DevExpress.XtraBars.LinkPersistInfo(Me.insertMergeFieldItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.showAllFieldCodesItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.showAllFieldResultsItem1),
+				New DevExpress.XtraBars.LinkPersistInfo(Me.toggleViewMergedDataItem1)
+			})
 			' 
 			' insertMergeFieldItem1
 			' 

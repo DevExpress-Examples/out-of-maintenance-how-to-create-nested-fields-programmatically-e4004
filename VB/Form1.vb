@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.Windows.Forms
 Imports DevExpress.XtraRichEdit
@@ -10,6 +9,7 @@ Imports DevExpress.XtraRichEdit.Commands
 Namespace RichEditNestedFields
 	Partial Public Class Form1
 		Inherits Form
+
 		Public Sub New()
 			InitializeComponent()
 
@@ -41,8 +41,8 @@ Namespace RichEditNestedFields
 			richEditControl1.Options.Fields.HighlightMode = FieldsHighlightMode.Always
 			richEditControl1.Options.Fields.HighlightColor = System.Drawing.Color.Yellow
 
-			CType(New ToggleViewMergedDataCommand(richEditControl1), ToggleViewMergedDataCommand).Execute()
-			CType(New ShowAllFieldCodesCommand(richEditControl1), ShowAllFieldCodesCommand).Execute()
+			Call (New ToggleViewMergedDataCommand(richEditControl1)).Execute()
+			Call (New ShowAllFieldCodesCommand(richEditControl1)).Execute()
 		End Sub
 
 		Private Sub richEditControl1_CalculateDocumentVariable(ByVal sender As Object, ByVal e As CalculateDocumentVariableEventArgs) Handles richEditControl1.CalculateDocumentVariable
