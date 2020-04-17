@@ -20,13 +20,13 @@ namespace RichEditNestedFields {
             DocumentRange[] dvFieldRanges = richEditControl1.Document.FindAll(fields, DevExpress.XtraRichEdit.API.Native.SearchOptions.None);
 
             foreach (DocumentRange range in dvFieldRanges) {
-                richEditControl1.Document.Fields.Add(range);
+                richEditControl1.Document.Fields.Create(range);
             }
 
             dvFieldRanges = richEditControl1.Document.FindAll(mf, DevExpress.XtraRichEdit.API.Native.SearchOptions.None);
 
             foreach (DocumentRange range in dvFieldRanges) {
-                richEditControl1.Document.Fields.Add(range);
+                richEditControl1.Document.Fields.Create(range);
             }
 
             List<SampleObject> objects = new List<SampleObject>();

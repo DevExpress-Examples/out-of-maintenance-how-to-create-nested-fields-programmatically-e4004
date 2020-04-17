@@ -22,13 +22,13 @@ Namespace RichEditNestedFields
 			Dim dvFieldRanges() As DocumentRange = richEditControl1.Document.FindAll(fields, DevExpress.XtraRichEdit.API.Native.SearchOptions.None)
 
 			For Each range As DocumentRange In dvFieldRanges
-				richEditControl1.Document.Fields.Add(range)
+				richEditControl1.Document.Fields.Create(range)
 			Next range
 
 			dvFieldRanges = richEditControl1.Document.FindAll(mf, DevExpress.XtraRichEdit.API.Native.SearchOptions.None)
 
 			For Each range As DocumentRange In dvFieldRanges
-				richEditControl1.Document.Fields.Add(range)
+				richEditControl1.Document.Fields.Create(range)
 			Next range
 
 			Dim objects As New List(Of SampleObject)()
